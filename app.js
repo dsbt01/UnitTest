@@ -8,10 +8,17 @@ function fromEuroToDollar(euroAmount)
     return euroAmount * 1.2 ;
 }
 
-// just a console log for ourselves.
-console.log(sum(7,3))
-console.log(fromEuroToDollar(10));
+function fromDollarToYen(dollarAmount)
+{
+    return dollarAmount * 106.58;
+}
+
+function fromYenToPound(yenAmount)
+{
+    return yenAmount * 0.00625;
+}
+
 
 // export the function to be used on other files 
 // (similar to the keyword `export` when using webpack)
-module.exports = { sum,  fromEuroToDollar};
+module.exports = { sum,  fromEuroToDollar, fromDollarToYen, fromYenToPound};
